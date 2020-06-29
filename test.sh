@@ -2,7 +2,7 @@
 
 set -e
 
-quines=$(find quine* -maxdepth 0 -type d)
+quines=$(find . -maxdepth 1 -name "quine*" -type d)
 
 for quine in $quines; do
   echo "testing: $quine"
